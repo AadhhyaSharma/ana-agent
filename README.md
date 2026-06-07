@@ -35,17 +35,14 @@ ANA (**A**utonomous **N**euron **A**gent) is a fully self-contained AI agent bui
 
 ---
 
-### 🧠 Neural Activation Heatmap
-
-<img src="https://media.base44.com/images/public/6a23b82bd84dd64b846ca29c/114d0adfa_generated_image.png" width="100%" alt="ANA Neuron Heatmap — layer-by-layer activation visualization" />
 
 > Click **Neurons** in the sidebar to see a live visualization of each layer's average activation. Watch how different inputs light up different parts of the network.
 
 ---
 
-### 🖥️ Terminal Output
 
-<img src="https://media.base44.com/images/public/6a23b82bd84dd64b846ca29c/c5f04e926_generated_image.png" width="100%" alt="ANA Terminal — startup banner with localhost URL" />
+
+
 
 > When you run ANA, the terminal shows the local URL and the browser opens automatically.
 
@@ -68,26 +65,6 @@ ANA (**A**utonomous **N**euron **A**gent) is a fully self-contained AI agent bui
 
 ---
 
-## Quick Start
-
-### Option 1 — Run locally (Python)
-
-```bash
-git clone https://github.com/AadhhyaSharma/ana-agent
-cd ana-agent
-python ana_launcher.py
-```
-
-Browser opens automatically at **http://localhost:5000** 🎉
-
-### Option 2 — Run with Docker
-
-```bash
-git clone https://github.com/AadhhyaSharma/ana-agent
-cd ana-agent
-docker build -t ana-agent .
-docker run -p 8080:8080 ana-agent
-```
 
 Open **http://localhost:8080**
 
@@ -100,26 +77,7 @@ Open **http://localhost:8080**
 
 ---
 
-## Deploy 24/7 (Free)
 
-### Railway (Recommended)
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/AadhhyaSharma/ana-agent)
-
-1. Click the button above
-2. Connect your GitHub account
-3. Select `AadhhyaSharma/ana-agent`
-4. Click **Deploy** — done. Railway gives you a permanent public URL.
-
-### Render
-
-1. Go to [render.com](https://render.com) → New → Web Service
-2. Connect `AadhhyaSharma/ana-agent`
-3. Build command: `pip install -r requirements.txt`
-4. Start command: `python ana_launcher.py --no-browser`
-5. Deploy ✅
-
----
 
 ## CLI Commands
 
