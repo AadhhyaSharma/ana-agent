@@ -1,0 +1,31 @@
+name: Build ANA Windows EXE
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyinstaller
+
+      - name: Build ANA.exe
+        run: pyinstaller --onefile --name ANA --add-data "mini_100_neuron_agent.py;." --add-data "core_infra.py;." --add-data "neural_engine.py;." ana_launcher.py
+
+      - name: Upload ANA.exe artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ANA_windows
+          path: dist/ANA.exe
+          retention-days: 30
