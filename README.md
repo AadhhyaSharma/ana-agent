@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://media.base44.com/images/public/6a23b82bd84dd64b846ca29c/e6ead34e5_generated_image.png" width="100%" alt="ANA Chat Interface" />
+
 
 # ANA — Autonomous Neuron Agent
 
