@@ -1,0 +1,2 @@
+# ANA has zero external dependencies — pure Python stdlib only
+# This file exists for Railway/Render/Docker compatibility
