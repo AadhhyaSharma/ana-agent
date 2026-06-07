@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ana-agent
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python ana_launcher.py --no-browser
+    envVars:
+      - key: PORT
+        value: 10000
+    healthCheckPath: /
